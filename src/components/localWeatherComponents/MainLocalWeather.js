@@ -1,8 +1,12 @@
 import React,{useState, useEffect, useContext} from 'react'
 import GeolocationContext from '../../context/GeolocationContext'
 import { useFetch } from '../../hooks/useFetch'
+import CardLocalWeather from './CardLocalWeather'
+import "./LocalWeather.css"
 
-const MainComponent = () => {
+const MainLocalWeather = () => {
+
+    const [localData,setLocalData]=useState(null)
 
     //Desestructuramos myPosition y GeolocationError del Context.
     const {myPosition, geolocationError} = useContext(GeolocationContext)
@@ -16,23 +20,32 @@ const MainComponent = () => {
     // Desestructuramos los estados provenientes del useFetch.
     const { data, error, loading } = useFetch(url)
 
-    console.log(data,error)
-
+    //console.log(data,error,loading)
+    
+    
     useEffect(() => {
-        
-    }, [myPosition])
+        if(data){
+        setLocalData({data:data});
+        }
+        //console.log(localData)
+    }, [data])
+    
+    //console.log(localData)
 
     if (geolocationError) return <h1>{geolocationError}</h1>
     
     if (loading) return <h1>LAODING....</h1>
 
-    if (error) return <h1>{error}</h1>
+    if (error) return <h1>{`Error en la petición Fetch ${error.statusText}`}</h1>
+
+    
 
     return (
-        <div>
-            <h2>Main Component</h2>
+        <div className="localWeatherContainer">
+            
+            {localData && <CardLocalWeather data={localData.data}/>}
         </div>
     )
 }
 
-export default MainComponent
+export default MainLocalWeather

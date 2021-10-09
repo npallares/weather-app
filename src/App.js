@@ -1,17 +1,15 @@
 import './App.css';
-import MainComponent from './components/mainComponents/MainComponent';
+import MainComponent from './components/mainComponent/MainComponent';
 import { GeolocationProvider } from './context/GeolocationContext';
 
 function App() {
   return (
     <div className="App">
-
-    <GeolocationProvider>
-      <MainComponent/>
-    </GeolocationProvider>
-
-
-
+      <div className="mainContainer">
+        <GeolocationProvider>
+          <MainComponent/>
+        </GeolocationProvider>
+      </div>
     </div>
   );
 }

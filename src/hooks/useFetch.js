@@ -4,7 +4,7 @@ export const useFetch = (url) => {
 
     //seteo de estados para el fetch.
     const [data, setData] = useState(null);
-    const [error, setError] = useState(false);
+    const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
   
     useEffect(() => {
