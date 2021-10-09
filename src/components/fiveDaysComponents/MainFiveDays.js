@@ -1,12 +1,13 @@
 import React,{useState, useEffect, useContext} from 'react'
 import GeolocationContext from '../../context/GeolocationContext'
 import { useFetch } from '../../hooks/useFetch'
-import "./MainFiveDays.css"
+import SelectFiveDays from './SelectFiveDays'
+import "./FiveDays.css"
 
 
 const MainFiveDays= () => {
 
-    const [localData,setLocalData]=useState([])
+    const [localData,setLocalData]=useState(null)
 
     //Desestructuramos myPosition y GeolocationError del Context.
     const {myPosition, geolocationError} = useContext(GeolocationContext)
@@ -23,23 +24,27 @@ const MainFiveDays= () => {
     //console.log(data,error,loading)
     
     useEffect(() => {
-        if(data)setLocalData(data);
-        
+        if(data){
+        setLocalData({data:data});
+        }
     }, [data])
     
     //console.log(localData)
 
+    // Comprobaciones para UI : ERROR GEOLOCALIZACION.
     if (geolocationError) return <h1>{geolocationError}</h1>
     
+    // Comprobaciones para UI : PETICION FETCH PENDIENTE.
     if (loading) return <h1>LAODING....</h1>
 
+    // Comprobaciones para UI : ERROR PETICION FETCH.
     if (error) return <h1>{`Error en la petición Fetch ${error.statusText}`}</h1>
 
     
 
     return (
-        <div className="fiveDaysContainer">
-            <h2>Main Five Days</h2>
+        <div className="fiveDays-Container">
+            {localData && <SelectFiveDays data={localData.data}/>}
         </div>
     )
 }

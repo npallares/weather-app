@@ -33,7 +33,7 @@ const GeolocationProvider = ({children}) => {
         // Tiempo estimado de lectura
         timeout: 5000,
 
-        // maximumAge Evita que no se guarde en cache la lectura.
+        // maximumAge Evita que se guarde en cache la lectura.
          maximumAge: 0,
 
     }

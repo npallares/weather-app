@@ -5,7 +5,7 @@ import CardLocalWeather from './CardLocalWeather'
 import "./LocalWeather.css"
 
 const MainLocalWeather = () => {
-
+    //Seteo de estados.
     const [localData,setLocalData]=useState(null)
 
     //Desestructuramos myPosition y GeolocationError del Context.
@@ -19,23 +19,24 @@ const MainLocalWeather = () => {
 
     // Desestructuramos los estados provenientes del useFetch.
     const { data, error, loading } = useFetch(url)
-
-    //console.log(data,error,loading)
     
     
     useEffect(() => {
         if(data){
         setLocalData({data:data});
         }
-        //console.log(localData)
+        
     }, [data])
     
     //console.log(localData)
-
-    if (geolocationError) return <h1>{geolocationError}</h1>
     
+    // Comprobaciones para UI : ERROR GEOLOCALIZACION.
+    if (geolocationError) return <h1>{geolocationError}</h1>
+
+    // Comprobaciones para UI : PETICION FETCH PENDIENTE.
     if (loading) return <h1>LAODING....</h1>
 
+    // Comprobaciones para UI : ERROR PETICION FETCH.
     if (error) return <h1>{`Error en la petición Fetch ${error.statusText}`}</h1>
 
     
@@ -44,6 +45,7 @@ const MainLocalWeather = () => {
         <div className="localWeatherContainer">
             
             {localData && <CardLocalWeather data={localData.data}/>}
+            
         </div>
     )
 }

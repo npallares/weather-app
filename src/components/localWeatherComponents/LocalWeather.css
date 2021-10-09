@@ -3,7 +3,10 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 
 .localWeatherContainer{
-    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
     width: 100%;
     /* border:1px solid red; */
     
@@ -14,7 +17,8 @@ font-family: 'Roboto Condensed', sans-serif; */
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    
+    min-width: 300px;
     height: 100%;
     /* border:1px solid blue; */
 }

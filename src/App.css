@@ -24,7 +24,7 @@ html {
   display: flex;
   flex-direction: row;
   width: 70% ;
-  height: 70%;
+  height: 75%;
   background-color: rgb(247, 247, 247);
   border-radius: 10px;
   margin-top: 3rem;
@@ -32,12 +32,15 @@ html {
 
 .localContainer{
 position: relative;
-width: 70%;
+width: 75%;
 height: 100%;
 border-right: 1px solid rgb(214, 214, 214);
 }
 
 .citiesContainer{
-  width: 30%;
-  border:1px solid green;
+  width: 25%;
+  /* border:1px solid green; */
+  background-color: rgb(185, 185, 185);
+  /* border-left: 1px solid rgb(63, 63, 63); */
+  border-radius: 0px 10px 10px 0px;
 }
