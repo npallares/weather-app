@@ -4,8 +4,8 @@ import { GeolocationProvider } from './context/GeolocationContext';
 
 function App() {
   return (
-    <div className="App">
-      <div className="mainContainer">
+    <div className="App" data-testid="app">
+      <div className="mainContainer" data-testid="mainContainer">
         <GeolocationProvider>
           <MainComponent/>
         </GeolocationProvider>

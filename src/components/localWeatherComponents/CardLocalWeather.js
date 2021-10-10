@@ -18,7 +18,7 @@ const CardLocalWeather = (props) => {
             <div className="local-temp">{`${Math.round(data.main.temp - 273.15)}º`}</div>
             <div className="local-columnsContainer">
                 <div className="local-column">
-                    <div className="local-row">Temperatura Mínima <span>{` ${Math.round(data.main.temp_min - 273.15)}º`}</span> </div>                    
+                    <div className="local-row">Temperatura<br/> Mínima <span>{` ${Math.round(data.main.temp_min - 273.15)}º`}</span> </div>                    
                     <div className="local-row">Humedad <span>{`${data.main.humidity}%`}</span> </div>
                     <div className="local-row">Presión <span>{`${data.main.pressure}`}<small>hPa</small></span> </div>
                 </div>

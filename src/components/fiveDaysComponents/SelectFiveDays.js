@@ -14,7 +14,7 @@ const SelectFiveDays = (props) => {
         return acc
     },[])
 
-    // shift elimina el primer elemento del array, ya que este primer elemento se muestra en el componente principal.
+    // shift elimina el primer elemento del array, ya que este primer elemento pertenece al dai actual y se muestra en el componente principal.
     fiveDays.shift()
     
     return (

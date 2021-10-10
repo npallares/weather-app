@@ -20,17 +20,23 @@ const MainCities = () => {
 
     return (
         <>
-            <div className="city-Title">Elige una Ciudad</div>
-            <select className="city-Select"name="cityID" onChange={(e)=>getCityData(e)} placeholder="city" defaultValue={'Ciudades'}>
-                    <option value="" hidden>Ciudades</option>
-                    <option value="2993458">Monaco</option>
-                    <option value="6356055">Barcelona</option>
-                    <option value="4167147">Orlando</option>
-                    <option value="1850147">Tokyo</option>
-                    <option value="2193732">Auckland</option>
+            <div className="city-Title" >Elige una Ciudad</div>
+            <select
+                className="city-Select" 
+                name="cityID" 
+                onChange={(e)=>getCityData(e)} 
+                placeholder="city" 
+                defaultValue={'Ciudades'} 
+                data-testid="city-Select">
+                        <option value="" hidden>Ciudades</option>
+                        <option value="2993458">Monaco</option>
+                        <option value="6356055">Barcelona</option>
+                        <option value="4167147">Orlando</option>
+                        <option value="1850147">Tokyo</option>
+                        <option value="2193732">Auckland</option>
             </select>
             
-            {cityData && <SetDataCities cityData={cityData} />}
+            {cityData && <SetDataCities cityData={cityData} data-testid="data-city"/>}
 
             
         </>
