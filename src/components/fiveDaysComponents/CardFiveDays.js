@@ -18,8 +18,8 @@ const CardFiveDays = (props) => {
     //console.log(data)
     return (
         <div className="fiveDays-CardDetail">
-            <span className="fiveDays-circle">
-           <img className="fiveDays-Icon"src={iconUrl} alt="icon"/>
+           <span className="fiveDays-circle">
+            <img className="fiveDays-Icon"src={iconUrl} alt="icon"/>
            </span>
            <div className="fiveDays-Temp">{` ${Math.round(data.main.temp - 273.15)}º`}</div>
            <div className="fiveDays-DayOfWeek">{dayOfWeek}{` `}<span>{date}</span></div>

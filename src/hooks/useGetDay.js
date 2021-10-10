@@ -1,8 +1,4 @@
-import React from 'react'
-
-export const useGetDay = (fecha) => {
-
-    
+export const useGetDay = (fecha) => { 
         const dias = [
             'DOM',
             'LUN',

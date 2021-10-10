@@ -7,16 +7,19 @@ const SelectFiveDays = (props) => {
     // Desetructuración de props.
     const {data} = props;
 
-    // Selección manual de temperatura promedio diaria.
-    const selectMoment = [[data.list[0+1]],[data.list[7+1]],[data.list[16+1]],[data.list[24+1]],[data.list[32+1]]]
     
-    // Mapeo de información proveniente de selectMomoent para el armado de la UI.
-    const listDays = selectMoment.map(el=>el[0])
+    // Array que filtra de las 40 lecturas, aquellas que en su fecha sean distintas, y las pushea al acumulador.
+    const fiveDays =  data.list.reduce((acc, el ) => {
+        if(!acc.find(dato => dato.dt_txt.slice(8,10) === el.dt_txt.slice(8,10))){ acc.push(el)}
+        return acc
+    },[])
+
+    // shift elimina el primer elemento del array, ya que este primer elemento se muestra en el componente principal.
+    fiveDays.shift()
     
-    //console.log(listDays)
     return (
         <div className="fiveDays-CardsContainer">
-            {listDays.map(el=><CardFiveDays data={el} key={el.dt}/>)}
+            {fiveDays.map(el=><CardFiveDays data={el} key={el.dt}/>)}
         </div>
     )
 }

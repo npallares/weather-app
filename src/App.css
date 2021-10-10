@@ -23,18 +23,20 @@ html {
 .mainContainer{
   display: flex;
   flex-direction: row;
-  width: 70% ;
-  height: 75%;
-  background-color: rgb(247, 247, 247);
+  width: 80% ;
+  height: 88%;
+  background-color: rgb(216, 216, 216);
   border-radius: 10px;
   margin-top: 3rem;
+  /* border:1px solid red; */
 }
 
 .localContainer{
-position: relative;
-width: 75%;
-height: 100%;
-border-right: 1px solid rgb(214, 214, 214);
+  position: relative;
+  width: 75%;
+  height: 100%;
+  border-right: 1px solid rgb(214, 214, 214);
+  /* border:1px solid blue; */
 }
 
 .citiesContainer{
@@ -43,4 +45,36 @@ border-right: 1px solid rgb(214, 214, 214);
   background-color: rgb(185, 185, 185);
   /* border-left: 1px solid rgb(63, 63, 63); */
   border-radius: 0px 10px 10px 0px;
+}
+
+@media only screen and (max-width:768px) {
+
+  .mainContainer{
+    flex-direction: column;
+    height:max-content;
+    width: 97%;
+  }
+
+  .localContainer{
+    display:flex;
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+    border:none
+  }
+
+  .citiesContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+  }
+
+
 }

@@ -73,3 +73,55 @@
     font-weight: 600;
     padding-top: 2px;
 }
+
+@media only screen and (max-width:768px){
+
+    .fiveDays-Container{
+        flex-direction: column;
+        height: 100%;
+        margin-right: 5px;
+
+    }
+
+    .fiveDays-CardsContainer{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fiveDays-CardDetail{
+        width: 100%;
+        height: 90px;
+        flex-direction: row;
+        margin: 0 0px ;
+        border-right:0px;
+        border-top: none;
+        /* border-bottom: 1px solid rgb(185, 185, 185);
+        border-left:1px solid rgb(185, 185, 185); */
+        
+    }
+
+    .fiveDays-Temp{
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .fiveDays-CardDetail{
+        width: auto
+    }
+
+    .fiveDays-DayOfWeek{
+        width: auto ;
+        margin: 0 10px;
+    }
+
+    .fiveDays-Icon{
+        width: auto ;
+        margin: 0 10px;
+    }
+
+    .fiveDays-circle{
+        width: auto ;
+        margin: 0 ;
+    }
+}

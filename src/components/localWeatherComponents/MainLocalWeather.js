@@ -42,7 +42,7 @@ const MainLocalWeather = () => {
     
 
     return (
-        <div className="localWeatherContainer">
+        <div className="local-WeatherContainer">
             
             {localData && <CardLocalWeather data={localData.data}/>}
             

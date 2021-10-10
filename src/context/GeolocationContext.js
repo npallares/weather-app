@@ -25,25 +25,25 @@ const GeolocationProvider = ({children}) => {
 
 
     // Seteo de opciones para la lectura del navigator.
-    const options ={
-
-        // por defecto viene false, mejora la lectura del dispositivo.
-        eneableHightAccuracy: true,
-
-        // Tiempo estimado de lectura
-        timeout: 5000,
-
-        // maximumAge Evita que se guarde en cache la lectura.
-         maximumAge: 0,
-
-    }
-
+    
     useEffect(()=>{
+
+        const options ={
+
+            // por defecto viene false, mejora la lectura del dispositivo.
+            eneableHightAccuracy: true,
+    
+            // Tiempo estimado de lectura
+            timeout: 5000,
+    
+            // maximumAge Evita que se guarde en cache la lectura.
+             maximumAge: 0,
+    
+        }
         
         // Ejecución de lectura lectura.
         navigator.geolocation.getCurrentPosition(success, denied, options)
-        
-        
+    
     },[])
     
 
