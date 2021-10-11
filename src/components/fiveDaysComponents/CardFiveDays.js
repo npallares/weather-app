@@ -8,6 +8,7 @@ const CardFiveDays = (props) => {
 
     // Uso del Hook useGetDAy para saber que dia de la semana cae la fecha que proviene de la UI.
     const dayOfWeek = useGetDay(data.dt_txt)
+    
 
     // Extracción numerica del dia.
     const date = data.dt_txt.slice(8,10)

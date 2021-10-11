@@ -64,7 +64,7 @@ html {
     display:flex;
     width: auto;
     height: auto;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: row;
     margin:0;
     padding:0;
@@ -88,6 +88,10 @@ html {
   .App {
     min-height: 100vh;
     height: 100%;
+  }
+
+  .localContainer{
+    flex-direction: column;
   }
 
   .mainContainer{

@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Weather app
+Weather app es una aplicacón de pronostico del tiempo creada en React Js que 
+utiliza la Api de **OpenWeatherMap** para brindar la información del pronostico 
+actual del timepo. Weather App brinda información climática del lugar geográfico
+desde donde se realiza la consulta, el pronóstico para los proximos 5 dias  y el 
+clima actual de 5 ciudades diferentes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Importante !
+**wheather app** solucitará al usuario los permisos de lectura de geolocalización 
+del dispositivo, para realizar los llamados a la API. Es importante permitir el acceso
+ de dicha lectura para el correcto funcionamiento de la App. De lo contrario, 
+ se imprimira en pantalla el mensaje de denegación de lectura y se solicitará acceso.
+ 
+## Inicio.
+Puede descargarse el repositorio en Zip, ó clonarlo con el comando:
 
-## Available Scripts
+`git clone https://github.com/npallares/weather-app`
 
-In the project directory, you can run:
+`npm install` para instalar las dependencias.
 
-### `npm start`
+`npm start` para iniciar el proyecto en localhost.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Arquitectura.
+###### Descripción gráfica de la estructura de la App y su flujo de información.
+[![](https://scontent.faep25-1.fna.fbcdn.net/v/t39.30808-6/244530771_4345483968903540_2778040823957051195_n.jpg?_nc_cat=100&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=QhPSxs0E5_0AX_991fV&_nc_ht=scontent.faep25-1.fna&oh=25f986fa3b1e872cda2af5628eacf190&oe=616979FF)](ESTRUCTURA)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Output.
+**wheather app** es responsive para dispositivos LG, MD y SM 
+![OUTPUT](https://scontent.faep25-1.fna.fbcdn.net/v/t39.30808-6/244540387_4345484058903531_898397073066525340_n.jpg?_nc_cat=108&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=aiI9D40cnB4AX8npjPy&tn=tbmcpi25FtjW1awZ&_nc_ht=scontent.faep25-1.fna&oh=3d8005cbf3dfd03d9c07eaa944371cd7&oe=6169EF33 "OUTPUT")
 
-### `npm test`
+## Testing.
+- Jest.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Autor.
+##### Nicolás Pallarés 
+##### https://www.linkedin.com/in/nicolas-pallares/

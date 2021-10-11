@@ -27,7 +27,7 @@ export const useFetch = (url) => {
             
           // si la respuesta es !OK , creamos objeto Error para un mejor manejo de este y setemos txt por default. 
           if (!res.ok) {
-            let err = new Error("Error en la petición Fetch");
+            let err = new Error("Error en la petición Fetch: ");
             err.status = res.status || "00";
             err.statusText = res.statusText || "Ocurrió un error";
             throw err;

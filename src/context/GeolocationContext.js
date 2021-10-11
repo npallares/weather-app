@@ -20,7 +20,7 @@ const GeolocationProvider = ({children}) => {
 
     // Seteo En caso de ERROR: Definimos un mensaje de error.
     const denied = (err)=>{
-        setGeolocationError(`Error Code: ${err.code}, Msg: ${err.message}. Por favor habilite la Geolocalización para continuar.`)
+        setGeolocationError(`Error Code ${err.code} : ${err.message}. Por favor habilite la Geolocalización para continuar.`)
     }
 
 

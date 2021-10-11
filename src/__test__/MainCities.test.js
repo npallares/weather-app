@@ -1,5 +1,4 @@
-import {cleanup, render, screen, fireEvent} from "@testing-library/react"
-import {userEvent} from "@testing-library/user-event"
+import {render, cleanup, screen, fireEvent} from "@testing-library/react"
 import MainCities from "../components/citiesComponents/MainCities";
 
 describe(`<MainCities/>`, ()=>{
@@ -7,6 +6,8 @@ describe(`<MainCities/>`, ()=>{
     beforeEach(()=>{
         render(<MainCities/>)
     })
+
+    afterEach(cleanup);
 
     it(`SELECT haga render correctamente`,()=>{
 
@@ -44,8 +45,7 @@ describe(`<MainCities/>`, ()=>{
         const TempMin = await screen.findByText(/Temperatura Mínima/i)
         const Presion = await screen.findByText(/Presión/i)
         const Humedad = await screen.findByText(/Humedad/i)
-
-        screen.debug()
+        
     })
    
 })
