@@ -22,7 +22,7 @@
     width: 20%;
     border-right:1px solid rgb(185, 185, 185);
     border-top:1px solid rgb(185, 185, 185);
-    /* border:1px solid red; */
+    /* border:1px solid rgb(17, 0, 255); */
 }
 
 .fiveDays-circle{
@@ -77,25 +77,30 @@
 @media only screen and (max-width:768px){
 
     .fiveDays-Container{
+        display: flex;
         flex-direction: column;
-        height: 100%;
+        height:500px;
         margin-right: 5px;
-
+        /* border: 1px solid red; */
     }
 
     .fiveDays-CardsContainer{
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: space-between;
         height: 100%;
+        width: 100%;
+        /* border: 1px solid yellow; */
     }
 
     .fiveDays-CardDetail{
         width: 100%;
-        height: 90px;
+        height: 100%;
         flex-direction: row;
         margin: 0 0px ;
         border-right:0px;
         border-top: none;
+        /* border:1px solid green; */
         /* border-bottom: 1px solid rgb(185, 185, 185);
         border-left:1px solid rgb(185, 185, 185); */
         
@@ -124,4 +129,13 @@
         width: auto ;
         margin: 0 ;
     }
+}
+
+@media only screen and (max-width:640px){
+
+    .fiveDays-Average{
+        display:none
+    }
+
+
 }

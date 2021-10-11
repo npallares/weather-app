@@ -11,7 +11,9 @@ const MainCities = () => {
     
     // Funcion asíncrona para obtener la data y pasarla al estado, asociada al onChage del select. 
     const getCityData = async(e)=>{
-        const newData = await fetch(`http://api.openweathermap.org/data/2.5/weather?id=${e.target.value}&appid=${APIKEY}`).then(res=>res.json()).then(data=>data)
+        const newData = await fetch(`http://api.openweathermap.org/data/2.5/weather?id=${e.target.value}&appid=${APIKEY}`)
+        .then(res=>res.json())
+        .then(data=>data)
         setCityData(newData)
     }
     

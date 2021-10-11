@@ -12,7 +12,7 @@ const SetDataCities = (props) => {
 
     return (
         <div className="city-CardContainer">
-            <img className="tempIcon"src={iconUrl} alt="Icon"/>
+            <div className="city-icon"><img src={iconUrl} alt="Icon"/></div>
             <div className="city-Name"><span>{`${cityData.sys.country} -`}</span>{` ${cityData.name.toUpperCase()}`}</div>
             <div className="city-Temp">{` ${Math.round(cityData.main.temp - 273.15)}º`}</div>
             <div className="city-Row">Temperatura Mínima <span>{` ${Math.round(cityData.main.temp_min - 273.15)}º`}</span> </div>
