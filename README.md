@@ -1,9 +1,5 @@
 # Weather app
-Weather app es una aplicacón de pronostico del tiempo creada en React Js que 
-utiliza la Api de **OpenWeatherMap** para brindar la información del pronostico 
-actual del timepo. Weather App brinda información climática del lugar geográfico
-desde donde se realiza la consulta, el pronóstico para los proximos 5 dias  y el 
-clima actual de 5 ciudades diferentes.
+Weather app es una aplicación de pronóstico del tiempo creada en React Js que utiliza la Api de **OpenWeatherMap** para brindar la información del pronóstico actual del tiempo. Weather App brinda información climática del lugar geográfico desde donde se realiza la consulta, el pronóstico para los próximos 5 días y el clima actual de 5 ciudades diferentes.
 
 ## Importante !
 **wheather app** solucitará al usuario los permisos de lectura de geolocalización 
