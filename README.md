@@ -15,7 +15,7 @@ Puede descargarse el repositorio en Zip, ó clonarlo con el comando:
 
 ## Arquitectura.
 ###### Descripción gráfica de la estructura de la App y su flujo de información.
-[![]https://scontent.faep25-1.fna.fbcdn.net/v/t39.30808-6/244530771_4345483968903540_2778040823957051195_n.jpg?_nc_cat=100&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=IT_wJxzohQAAX9crbDS&_nc_ht=scontent.faep25-1.fna&oh=9a58dc68f886d5a9c866ceacff3e7cef&oe=618F0CBF)](ESTRUCTURA)
+[![](https://scontent.faep25-1.fna.fbcdn.net/v/t39.30808-6/244530771_4345483968903540_2778040823957051195_n.jpg?_nc_cat=100&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=IT_wJxzohQAAX9crbDS&_nc_ht=scontent.faep25-1.fna&oh=9a58dc68f886d5a9c866ceacff3e7cef&oe=618F0CBF)](ESTRUCTURA)
 
 ## Output.
 **wheather app** es responsive para dispositivos LG, MD y SM 
