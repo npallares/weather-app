@@ -1,5 +1,6 @@
 import React from 'react'
 import "./LocalWeather.css"
+import Image from '../atoms/Image';
 
 
 const CardLocalWeather = (props) => {
@@ -13,7 +14,7 @@ const CardLocalWeather = (props) => {
     //console.log(data)
     return (
         <div className="local-cardContainer">
-            <img className="local-tempIcon"src={iconUrl} alt="Icon"/>
+            <Image className="local-tempIcon" size="lg" src={iconUrl} alt="icon" />
             <div className="local-city"><span>{`${data.sys.country} -`}</span>{` ${data.name.toUpperCase()}`}</div>
             <div className="local-temp">{`${Math.round(data.main.temp - 273.15)}º`}</div>
             <div className="local-columnsContainer">
