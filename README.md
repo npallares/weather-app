@@ -19,7 +19,7 @@ Puede descargarse el repositorio en Zip, ó clonarlo con el comando:
 
 ## Output.
 **wheather app** es responsive para dispositivos LG, MD y SM 
-![OUTPUT](https://scontent.faep25-1.fna.fbcdn.net/v/t39.30808-6/244540387_4345484058903531_898397073066525340_n.jpg?_nc_cat=108&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=DTfazsxTEUsAX_iIW1f&tn=tbmcpi25FtjW1awZ&_nc_ht=scontent.faep25-1.fna&oh=a60d2235a0f27b42105342dd993a9b40&oe=618D87B3 "OUTPUT")
+![OUTPUT](https://npallaresporfolio.000webhostapp.com/assets/output1.png "OUTPUT")
 
 ## Testing.
 - Jest.
