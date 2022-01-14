@@ -1,5 +1,6 @@
 import React from 'react'
 import { useGetDay } from '../../hooks/useGetDay';
+import Image from '../atoms/Image';
 
 const CardFiveDays = (props) => {
     
@@ -19,9 +20,7 @@ const CardFiveDays = (props) => {
     //console.log(data)
     return (
         <div className="fiveDays-CardDetail">
-           <span className="fiveDays-circle">
-            <img className="fiveDays-Icon"src={iconUrl} alt="icon"/>
-           </span>
+            <Image src={iconUrl} alt="icon" />
            <div className="fiveDays-Temp">{` ${Math.round(data.main.temp - 273.15)}º`}</div>
            <div className="fiveDays-DayOfWeek">{dayOfWeek}{` `}<span>{date}</span></div>
            <div className="fiveDays-Average">TEMP. PROMEDIO</div>
