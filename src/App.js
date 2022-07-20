@@ -10,6 +10,10 @@ function App() {
   const initApp =()=>{
     setStart(true)
   }
+
+  useEffect(() => {
+  }, [start])
+  
   
   if(!start){
    return <button onClick={()=>{initApp()}}>Comenzar</button>
